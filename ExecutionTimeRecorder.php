@@ -94,7 +94,7 @@ class ExecutionTimeRecorder {
      */
     public function endTimer() {
         $this->time_end = microtime(true);
-        $this->time = $this->time_end - $this->time_start;
+        $this->time = number_format(($this->time_end - $this->time_start), 5);
         static::$total_exec += $this->time;
     }
 

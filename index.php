@@ -9,7 +9,8 @@ $timer_1 = new ExecutionTimeRecorder();
 $timer_1->startTimer("First Timer");
 
 //Block of code to test. In this case just a delay of the execution
-sleep(4);
+echo "Sleeping for 2 seconds<br/>";
+sleep(2);
 
 //Stop Timer
 $timer_1->endTimer();
@@ -25,9 +26,10 @@ $timer_2 = new ExecutionTimeRecorder();
 $timer_2->startTimer("Second Timer");
 
 //Block of code to test. In this case just a delay of the execution
-for ($x = 0; $x <= 1000; $x++) {
-    echo "The number is: $x <br>";
-} 
+echo "Counting to 15000000...<br/>";
+for ($x = 0; $x <= 15000000; $x++) {
+
+}
 
 //Stop Timer
 $timer_2->endTimer();
