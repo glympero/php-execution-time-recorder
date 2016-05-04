@@ -104,7 +104,7 @@ class ExecutionTimeRecorder {
      */
     static function totalExecution() {
         return static::getNumberTimers() . " Timers have been used and it "
-                . "took " . static::getTotalExec() . " seconds to run the entire page";
+                . "took " . static::getTotalExec() . " seconds to run them.<br/> It also took " . number_format((microtime(true) - $_SERVER['REQUEST_TIME_FLOAT']), 5) . " seconds to run the entire page";;
     }
 
 }
